@@ -1,0 +1,28 @@
+{
+  "name": "gmb-poster",
+  "version": "1.0.0",
+  "description": "Used to automate posting on Google MyBusiness",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron src/main.js"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "electron": "^3.0.2",
+    "materialize-css": "^1.0.0-rc.2",
+    "puppeteer": "^1.7.0"
+  },
+  "keywords": [
+    "Google",
+    "MyBusiness",
+    "Post",
+    "Puppeteer",
+    "Electron"
+  ],
+  "author": {
+    "name": "Austin Gordon",
+    "email": "agordon@hutsoninc.com",
+    "url": "https://github.com/AustinLeeGordon"
+  },
+  "license": "MIT"
+}

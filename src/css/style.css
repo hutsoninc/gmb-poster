@@ -1,0 +1,23 @@
+h5 {
+    margin-bottom: 25px;
+}
+
+#post-container {
+    display: none;
+}
+
+#offer-post-container {
+    display: none;
+}
+
+#post-button-link-row {
+    display: none;
+}
+
+.hutson-green-text {
+    color: #377539 !important;
+}
+
+.hutson-green {
+    background-color: #377539 !important;
+}

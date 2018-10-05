@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GMB Poster</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Create Google MyBusiness Post</h3>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Select Post Type</h5>
+            <a class="waves-effect waves-light btn" id="create-post"><i class="material-icons left">create</i>Create Post</a>
+            <a class="waves-effect waves-light btn" id="create-offer-post"><i class="material-icons left">create</i>Create Offer Post</a>
+        </div>
+        <div class="section" id="post-container">
+            <div class="divider"></div>
+            <h5>Post</h5>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="post-summary" class="materialize-textarea has-character-counter" data-length="1500" length="1500"></textarea>
+                            <label for="post-summary">Post Summary</label>
+                        </div>
+                    </div>
+                    <div class="row" id="post-photo-row">
+                        <div class="input-field col s12">
+                            <a class="waves-effect waves-light btn" id="select-post-photo">Select Post Photo</a>
+                            <div class="input-field inline">
+                                <input id="post-photo" type="text">
+                                <label for="post-photo">Post Photo</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="post-button-row">
+                        <div class="input-field col s12">
+                            <select id="post-button">
+                                <option value="" selected>Choose your option</option>
+                                <option value="BOOK">Book</option>
+                                <option value="ORDER">Order Online</option>
+                                <option value="SHOP">Buy</option>
+                                <option value="LEARN_MORE">Learn More</option>
+                                <option value="SIGN_UP">Sign Up</option>
+                                <option value="GET_OFFER">Get Offer</option>
+                                <option value="CALL">Call Now</option>
+                            </select>
+                            <label>Button (optional)</label>
+                        </div>
+                    </div>
+                    <div class="row" id="post-button-link-row">
+                        <div class="input-field col s12">
+                            <input id="post-button-link" type="url" class="validate">
+                            <label for="button-link">Button Link</label>
+                            <span class="helper-text" data-error="Must use a valid URL" data-success="URL looks good">Enter a valid URL</span>
+                        </div>
+                    </div>
+                    <!-- <div class="row" id="post-stores-row">
+                        <div class="input-field col s12">
+                            <select multiple required>
+                                <option value="" disabled>Select stores to post to</option>
+                            </select>
+                            <label>Stores</label>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button class="btn waves-effect waves-light" type="submit" name="submit">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="section" id="offer-post-container">
+            <div class="divider"></div>
+            <h5>Offer Post</h5>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+        require('./js/index-materialize');
+    </script>
+    <script>
+        require('./js/index');
+    </script>
+</body>
+
+</html>
